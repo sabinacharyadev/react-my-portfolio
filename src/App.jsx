@@ -2,14 +2,15 @@ import "./App.css";
 
 import DarkModeToggle from "./components/DarkModeToggle";
 import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import SummarySection from "./components/SummarySection";
-import SkillsSection from "./components/SkillsSection";
-import RecentWork from "./components/RecentWork";
-import AboutMe from "./components/AboutMe";
-import GetInTouch from "./components/GetInTouch";
+
 import Footer from "./components/Footer";
 import GoToTop from "./components/GoToTop";
+import HomePage from "./pages/HomePage";
+import SkillsPage from "./pages/SkillsPage";
+import ProjectPage from "./pages/ProjectsPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import { Route, Routes } from "react-router";
 
 function App() {
   return (
@@ -18,12 +19,14 @@ function App() {
 
       <div className="wrapper-container">
         <Header />
-        <HeroSection />
-        <SummarySection />
-        <SkillsSection />
-        <RecentWork />
-        <AboutMe />
-        <GetInTouch />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="skills" element={<SkillsPage />} />
+          <Route path="projects" element={<ProjectPage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
+        </Routes>
+
         <Footer />
         <GoToTop />
       </div>
