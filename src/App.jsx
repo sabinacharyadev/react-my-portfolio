@@ -16,7 +16,7 @@ function App() {
           <ProfileComponent />
         </Col>
 
-        <Col className="m-4" lg={8}>
+        <Col lg={8}>
           <BodyRouterComponent navItem={navItem} />
         </Col>
       </Row>

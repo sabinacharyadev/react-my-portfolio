@@ -5,7 +5,7 @@ import SkillImage from "./SkillImage";
 const AboutComponent = () => {
   return (
     <Container className="mt-2">
-      <h1>About Me </h1>
+      <h1 className="pt-3">About Me </h1>
       <p>
         Hi, I&apos;m Sabin Acharya, a passionate Full Stack Developer dedicated
         to building user-centric and scalable web applications. With a strong
@@ -19,40 +19,30 @@ const AboutComponent = () => {
         and create magic together. Reach out, and let&apos;s transform your
         vision into a reality!
       </p>
-      <h2>What I&apos;m Doing</h2>
-      <Row className="d-flex flex-column flex-md-row px-4">
+      <h2 className="pt-4">What I&apos;m Doing</h2>
+      <Row className="d-flex flex-column flex-md-row px-2">
         <Col
           style={{ backgroundColor: "#4a4a4a" }}
           className="border rounded p-4 my-3 mx-1"
         >
-          <CodeSquare
-            style={{ backgroundColor: "#4a4a4a" }}
-            className="mb-2"
-            size={50}
-          />
-          <h3 style={{ backgroundColor: "#4a4a4a" }}>Web Development</h3>
-          <p style={{ backgroundColor: "#4a4a4a" }}>
-            High-quality development of sites at the professional level.
-          </p>
+          <CodeSquare className="mb-2" size={50} />
+          <h3>Web Development</h3>
+          <p>High-quality development of sites at the professional level.</p>
         </Col>
 
         <Col
           style={{ backgroundColor: "#4a4a4a" }}
-          className="border rounded  p-4 my-3 mx-1"
+          className="border rounded p-4 my-3 mx-1"
         >
-          <Server
-            style={{ backgroundColor: "#4a4a4a" }}
-            className="mb-2"
-            size={50}
-          />
-          <h3 style={{ backgroundColor: "#4a4a4a" }}>Backend Development</h3>
-          <p style={{ backgroundColor: "#4a4a4a" }}>
+          <Server className="mb-2" size={50} />
+          <h3>Backend Development</h3>
+          <p>
             High-performance backend services designed for scalability and
             seamless user experience.
           </p>
         </Col>
       </Row>
-      <h2>Skills</h2>
+      <h2 className="pt-4">Skills</h2>
       <div style={{ maxWidth: "100%" }} className="d-flex overflow-scroll">
         <SkillImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9iWVlYHaZpixvSXKb7Pi4Fsr1_Ci4yI_XXg&s" />
         <SkillImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZAc4BswrDj_q0JcxkRYJ09NDHtv5GEfzOzQ&s" />

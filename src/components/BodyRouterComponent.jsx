@@ -14,7 +14,7 @@ const BodyRouterComponent = ({ navItem }) => {
           backgroundColor: "#4a4a4a",
           lineHeight: "2rem",
         }}
-        className="bodyContainer border rounded mx-4"
+        className="bodyContainer border border-0 rounded mx-4 "
       >
         {(() => {
           switch (navItem) {
