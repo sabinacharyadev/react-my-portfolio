@@ -12,6 +12,7 @@ const BodyRouterComponent = ({ navItem }) => {
         style={{
           marginBottom: "5rem",
           backgroundColor: "#4a4a4a",
+          lineHeight: "2rem",
         }}
         className="bodyContainer border rounded mx-4"
       >
