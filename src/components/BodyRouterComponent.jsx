@@ -3,13 +3,17 @@ import AboutComponent from "./AboutComponent";
 import ContactComponent from "./ContactComponent";
 import PortfolioComponent from "./PortfolioComponent";
 import ResumeComponent from "./ResumeComponent";
+import "../index.css";
 
 const BodyRouterComponent = ({ navItem }) => {
   return (
     <>
       <div
-        style={{ marginBottom: "5rem", backgroundColor: "#4a4a4a" }}
-        className="border rounded mx-4"
+        style={{
+          marginBottom: "5rem",
+          backgroundColor: "#4a4a4a",
+        }}
+        className="bodyContainer border rounded mx-4"
       >
         {(() => {
           switch (navItem) {

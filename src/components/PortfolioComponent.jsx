@@ -1,5 +1,5 @@
 const PortfolioComponent = () => {
-  return <>THis is a resume</>;
+  return <>THis is a portfolio</>;
 };
 
 export default PortfolioComponent;

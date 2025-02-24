@@ -11,12 +11,12 @@ function App() {
   };
   return (
     <>
-      <Row className="d-flex align-items-center justify-content-center vh-100">
-        <Col>
+      <Row className="d-flex align-items-center justify-content-center vh-100 flex-lg-nowrap">
+        <Col lg={4}>
           <ProfileComponent />
         </Col>
 
-        <Col className="m-4">
+        <Col className="m-4" lg={8}>
           <BodyRouterComponent navItem={navItem} />
         </Col>
       </Row>

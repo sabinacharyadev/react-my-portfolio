@@ -7,22 +7,19 @@ const AboutComponent = () => {
     <Container className="mt-2">
       <h1>About Me </h1>
       <p>
-        Hi, I&apos;m Sabin Babu, a passionate Full Stack Developer dedicated to
-        building user-centric and scalable web applications. With a strong
+        Hi, I&apos;m Sabin Acharya, a passionate Full Stack Developer dedicated
+        to building user-centric and scalable web applications. With a strong
         foundation in React.js, JavaScript, HTML, CSS, and Node.js, Express.js,
         Mongodb, I thrive on solving complex problems and creating seamless
         digital experiences.
       </p>
-
       <p>
         If you&apos;re seeking a skilled Full Stack developer to breathe life
         into your project and exceed your expectations, I am here to collaborate
         and create magic together. Reach out, and let&apos;s transform your
         vision into a reality!
       </p>
-
       <h2>What I&apos;m Doing</h2>
-
       <Row className="d-flex flex-column flex-md-row px-4">
         <Col
           style={{ backgroundColor: "#4a4a4a" }}
@@ -55,7 +52,6 @@ const AboutComponent = () => {
           </p>
         </Col>
       </Row>
-
       <h2>Skills</h2>
       <div style={{ maxWidth: "100%" }} className="d-flex overflow-scroll">
         <SkillImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9iWVlYHaZpixvSXKb7Pi4Fsr1_Ci4yI_XXg&s" />
