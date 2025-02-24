@@ -1,8 +1,13 @@
 import { Row, Col } from "react-bootstrap";
 import ProfileComponent from "./components/ProfileComponent";
-import BodyComponent from "./components/BodyComponent";
+import BodyRouterComponent from "./components/BodyRouterComponent";
 import NavigationComponent from "./components/NavigationComponent";
+import { useState } from "react";
 function App() {
+  const [navItem, setNavItem] = useState("aboutme");
+  const handleOnClick = (clickedItem) => {
+    setNavItem(clickedItem);
+  };
   return (
     <>
       <Row className="d-flex align-items-center justify-content-center vh-100">
@@ -11,10 +16,10 @@ function App() {
         </Col>
 
         <Col className="m-4">
-          <BodyComponent />
+          <BodyRouterComponent navItem={navItem} />
         </Col>
       </Row>
-      <NavigationComponent />
+      <NavigationComponent handleOnClick={handleOnClick} />
     </>
   );
 }
