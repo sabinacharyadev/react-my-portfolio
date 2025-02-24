@@ -11,19 +11,16 @@ const NavigationComponent = ({ handleOnClick }) => {
     >
       <Container className="rounded">
         <Nav className="d-flex justify-content-around vw-100">
-          <Nav.Link href="#about" onClick={() => handleOnClick("aboutme")}>
+          <Nav.Link href="" onClick={() => handleOnClick("aboutme")}>
             About
           </Nav.Link>
-          <Nav.Link href="#resume" onClick={() => handleOnClick("resume")}>
+          <Nav.Link href="" onClick={() => handleOnClick("resume")}>
             Resume
           </Nav.Link>
-          <Nav.Link
-            href="#portfolio"
-            onClick={() => handleOnClick("portfolio")}
-          >
+          <Nav.Link href="" onClick={() => handleOnClick("portfolio")}>
             Portfolio
           </Nav.Link>
-          <Nav.Link href="#contact" onClick={() => handleOnClick("contact")}>
+          <Nav.Link href="" onClick={() => handleOnClick("contact")}>
             Contact
           </Nav.Link>
         </Nav>
