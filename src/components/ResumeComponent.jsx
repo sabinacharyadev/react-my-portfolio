@@ -1,5 +1,10 @@
+import { Container } from "react-bootstrap";
 const ResumeComponent = () => {
-  return <>THis is a resume</>;
+  return (
+    <Container className="mt-2">
+      <h1>Resume</h1>
+    </Container>
+  );
 };
 
 export default ResumeComponent;
