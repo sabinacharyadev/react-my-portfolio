@@ -8,8 +8,8 @@ const BodyRouterComponent = ({ navItem }) => {
   return (
     <>
       <div
-        style={{ height: "90vh", marginBottom: "5rem" }}
-        className="border rounded"
+        style={{ marginBottom: "5rem", backgroundColor: "#4a4a4a" }}
+        className="border rounded mx-4"
       >
         {(() => {
           switch (navItem) {

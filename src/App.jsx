@@ -3,6 +3,7 @@ import ProfileComponent from "./components/ProfileComponent";
 import BodyRouterComponent from "./components/BodyRouterComponent";
 import NavigationComponent from "./components/NavigationComponent";
 import { useState } from "react";
+
 function App() {
   const [navItem, setNavItem] = useState("aboutme");
   const handleOnClick = (clickedItem) => {
@@ -11,7 +12,7 @@ function App() {
   return (
     <>
       <Row className="d-flex align-items-center justify-content-center vh-100">
-        <Col lg={4}>
+        <Col>
           <ProfileComponent />
         </Col>
 
