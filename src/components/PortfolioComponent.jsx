@@ -41,6 +41,31 @@ const PortfolioComponent = () => {
             },
           ]}
         />
+
+        <PortfolioCard
+          img="https://i.postimg.cc/ZnW8k0v1/temp-Image-Dy-U81-U.avif"
+          title="Homely."
+          liveLink="https://node-express-basics.onrender.com/login"
+          gitLink="https://github.com/sabinacharyadev/express_server_side_rendering"
+          techStack={[
+            {
+              id: 1,
+              name: "Node.js",
+            },
+            {
+              id: 2,
+              name: "Express.js",
+            },
+            {
+              id: 3,
+              name: "Bootstrap",
+            },
+            {
+              id: 4,
+              name: "SSR",
+            },
+          ]}
+        />
       </Stack>
     </Container>
   );
