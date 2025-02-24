@@ -3,7 +3,12 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 
 const NavigationComponent = ({ handleOnClick }) => {
   return (
-    <Navbar fixed="bottom" bg="dark" data-bs-theme="dark">
+    <Navbar
+      className="rounded-top"
+      fixed="bottom"
+      bg="dark"
+      data-bs-theme="dark"
+    >
       <Container className="rounded">
         <Nav className="d-flex justify-content-around vw-100">
           <Nav.Link href="#about" onClick={() => handleOnClick("aboutme")}>
