@@ -11,7 +11,7 @@ const ProfileComponent = () => {
           src={ProfileImage}
           roundedCircle
         />
-        <div>
+        <div style={{ marginLeft: "-1rem" }}>
           <h1>Sabin Acharya</h1>
           <p>sabinacharyadev</p>
 
