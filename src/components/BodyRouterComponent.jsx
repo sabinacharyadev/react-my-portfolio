@@ -13,6 +13,7 @@ const BodyRouterComponent = ({ navItem }) => {
           marginBottom: "5rem",
           backgroundColor: "#4a4a4a",
           lineHeight: "2rem",
+          minHeight: "100vh",
         }}
         className="bodyContainer border border-0 rounded mx-4 "
       >
