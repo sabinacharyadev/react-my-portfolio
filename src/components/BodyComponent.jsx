@@ -1,7 +1,7 @@
 const BodyComponent = () => {
   return (
     <>
-      <div style={{ height: "50vh" }} className="border rounded"></div>
+      <div style={{ height: "90vh" }} className="border rounded"></div>
     </>
   );
 };

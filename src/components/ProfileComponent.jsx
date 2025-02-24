@@ -5,7 +5,7 @@ const ProfileComponent = () => {
     <>
       <div className="d-flex flex-lg-column align-items-center">
         <Image
-          style={{ width: "20rem" }}
+          style={{ width: "15rem" }}
           className="my-4"
           src={ProfileImage}
           roundedCircle
