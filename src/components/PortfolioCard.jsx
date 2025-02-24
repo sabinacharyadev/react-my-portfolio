@@ -4,7 +4,10 @@ import { Globe2, Github } from "react-bootstrap-icons";
 
 const PortfolioCard = ({ img, title, liveLink, gitLink, techStack }) => {
   return (
-    <Card style={{ width: "22rem" }}>
+    <Card
+      style={{ width: "22rem", backgroundColor: "#4a4a4a", color: "white" }}
+      className="border border-0"
+    >
       <Card.Img variant="top" src={img} />
       <Card.Body>
         <Card.Text>
@@ -19,15 +22,14 @@ const PortfolioCard = ({ img, title, liveLink, gitLink, techStack }) => {
         <Card.Title>{title}</Card.Title>
 
         <Stack direction="horizontal" gap={2}>
-          <Button variant="link" target="_blank" href={liveLink}>
+          <Button variant="light" target="_blank" href={liveLink}>
             <Globe2 />
           </Button>
 
-          <Button variant="black" target="_blank" href={gitLink}>
+          <Button variant="light" target="_blank" href={gitLink}>
             <Github />
           </Button>
         </Stack>
-        {/* <Button variant="primary">Go somewhere</Button> */}
       </Card.Body>
     </Card>
   );

@@ -5,7 +5,7 @@ const PortfolioComponent = () => {
     <Container className="mt-2">
       <h1 className="pt-3">Portfolio</h1>
       <Stack
-        className="d-flex flex-column flex-md-row flex-md-wrap align-items-center justify-content-center"
+        className="d-flex flex-column flex-md-row flex-md-wrap align-items-center justify-content-center p-2"
         gap={5}
       >
         <PortfolioCard
@@ -38,108 +38,6 @@ const PortfolioComponent = () => {
             {
               id: 2,
               name: "Bootstrap",
-            },
-          ]}
-        />
-
-        <PortfolioCard
-          img="https://i.postimg.cc/PJH96z86/temp-Imagevld0u7.avif"
-          title="Recipe Book"
-          liveLink="https://react-recipe-book-three.vercel.app"
-          gitLink="https://github.com/sabinacharyadev/react-recipe-book"
-          techStack={[
-            {
-              id: 1,
-              name: "React",
-            },
-            {
-              id: 2,
-              name: "React Bootstrap",
-            },
-          ]}
-        />
-
-        <PortfolioCard
-          img="https://i.postimg.cc/PJH96z86/temp-Imagevld0u7.avif"
-          title="Recipe Book"
-          liveLink="https://react-recipe-book-three.vercel.app"
-          gitLink="https://github.com/sabinacharyadev/react-recipe-book"
-          techStack={[
-            {
-              id: 1,
-              name: "React",
-            },
-            {
-              id: 2,
-              name: "React Bootstrap",
-            },
-          ]}
-        />
-
-        <PortfolioCard
-          img="https://i.postimg.cc/PJH96z86/temp-Imagevld0u7.avif"
-          title="Recipe Book"
-          liveLink="https://react-recipe-book-three.vercel.app"
-          gitLink="https://github.com/sabinacharyadev/react-recipe-book"
-          techStack={[
-            {
-              id: 1,
-              name: "React",
-            },
-            {
-              id: 2,
-              name: "React Bootstrap",
-            },
-          ]}
-        />
-
-        <PortfolioCard
-          img="https://i.postimg.cc/PJH96z86/temp-Imagevld0u7.avif"
-          title="Recipe Book"
-          liveLink="https://react-recipe-book-three.vercel.app"
-          gitLink="https://github.com/sabinacharyadev/react-recipe-book"
-          techStack={[
-            {
-              id: 1,
-              name: "React",
-            },
-            {
-              id: 2,
-              name: "React Bootstrap",
-            },
-          ]}
-        />
-
-        <PortfolioCard
-          img="https://i.postimg.cc/PJH96z86/temp-Imagevld0u7.avif"
-          title="Recipe Book"
-          liveLink="https://react-recipe-book-three.vercel.app"
-          gitLink="https://github.com/sabinacharyadev/react-recipe-book"
-          techStack={[
-            {
-              id: 1,
-              name: "React",
-            },
-            {
-              id: 2,
-              name: "React Bootstrap",
-            },
-          ]}
-        />
-
-        <PortfolioCard
-          img="https://i.postimg.cc/PJH96z86/temp-Imagevld0u7.avif"
-          title="Recipe Book"
-          liveLink="https://react-recipe-book-three.vercel.app"
-          gitLink="https://github.com/sabinacharyadev/react-recipe-book"
-          techStack={[
-            {
-              id: 1,
-              name: "React",
-            },
-            {
-              id: 2,
-              name: "React Bootstrap",
             },
           ]}
         />
