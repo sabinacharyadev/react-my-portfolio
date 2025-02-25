@@ -13,7 +13,7 @@ const ProfileComponent = () => {
         />
         <div style={{ marginLeft: "-1rem" }}>
           <h1>Sabin Acharya</h1>
-          <p>sabinacharyadev</p>
+          <p className="text-center">sabinacharya444@gmail.com</p>
 
           <Stack className="d-flex flex-row justify-content-start justify-content-lg-center gap-3">
             <Button
