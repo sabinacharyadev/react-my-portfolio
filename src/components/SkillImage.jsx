@@ -3,7 +3,7 @@ import { Image } from "react-bootstrap";
 const SkillImage = ({ src }) => {
   return (
     <Image
-      style={{ width: "10rem", height: "10rem" }}
+      style={{ width: "5rem", height: "5rem" }}
       className="m-3"
       src={src}
       rounded
