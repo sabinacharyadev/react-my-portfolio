@@ -10,7 +10,7 @@ const PortfolioCard = ({ img, title, liveLink, gitLink, techStack }) => {
       style={{ textDecoration: "none", color: "inherit" }}
     >
       <Card
-        style={{ width: "20rem", backgroundColor: "#4a4a4a", color: "white" }}
+        style={{ width: "15rem", backgroundColor: "#4a4a4a", color: "white" }}
         className="border border-0 "
       >
         <Card.Img variant="top" src={img} />
