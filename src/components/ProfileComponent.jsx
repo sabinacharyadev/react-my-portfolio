@@ -4,14 +4,14 @@ import { Linkedin, Github, StackOverflow } from "react-bootstrap-icons";
 const ProfileComponent = () => {
   return (
     <>
-      <div className="d-flex flex-lg-column align-items-center">
+      <div className="d-flex align-items-center  flex-lg-column ">
         <Image
-          style={{ width: "15rem" }}
+          style={{ width: "10rem" }}
           className="my-4"
           src={ProfileImage}
           roundedCircle
         />
-        <div style={{ marginLeft: "-1rem" }}>
+        <div>
           <h1>Sabin Acharya</h1>
           <p className="text-center">sabinacharya444@gmail.com</p>
 
