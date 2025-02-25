@@ -2,6 +2,7 @@ body {
   background-color: black !important;
   color: white !important;
   font-family: Comfortaa !important;
+  font-size: small !important;
 }
 
 @media screen and (min-width: 992px) {
