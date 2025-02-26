@@ -3,6 +3,7 @@ import AboutComponent from "./AboutComponent";
 import ContactComponent from "./ContactComponent";
 import PortfolioComponent from "./PortfolioComponent";
 import ResumeComponent from "./ResumeComponent";
+
 import "../index.css";
 
 const BodyRouterComponent = ({ navItem }) => {
