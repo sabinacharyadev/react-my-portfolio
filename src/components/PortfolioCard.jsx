@@ -15,15 +15,14 @@ const PortfolioCard = ({ img, title, liveLink, gitLink, techStack }) => {
       >
         <Card.Img variant="top" src={img} />
         <Card.Body>
-          <Card.Text>
-            <Stack direction="horizontal" gap={2}>
-              {techStack.map((item) => (
-                <Badge key={item.id} bg="primary">
-                  {item.name}
-                </Badge>
-              ))}
-            </Stack>
-          </Card.Text>
+          <Stack direction="horizontal" gap={2} className="mb-2">
+            {techStack.map((item) => (
+              <Badge key={item.id} bg="primary">
+                {item.name}
+              </Badge>
+            ))}
+          </Stack>
+
           <Card.Title>{title}</Card.Title>
 
           <Stack direction="horizontal" gap={2}>
