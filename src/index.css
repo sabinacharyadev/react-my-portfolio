@@ -7,6 +7,7 @@ body {
   color: white !important;
   font-family: Comfortaa !important;
   font-size: small !important;
+  overflow-x: hidden !important;
 }
 /* scroll behavior on body container */
 @media screen and (min-width: 992px) {
@@ -22,6 +23,9 @@ body {
   opacity: 1 !important;
 }
 
+.zoom {
+  text-decoration: none;
+}
 .zoom:hover {
   transform: scale(1.1);
   transition: all 0.1s ease-in;

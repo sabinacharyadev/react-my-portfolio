@@ -1,12 +1,9 @@
-/* eslint-disable react/prop-types */
-import AboutComponent from "./AboutComponent";
-import ContactComponent from "./ContactComponent";
-import PortfolioComponent from "./PortfolioComponent";
-import ResumeComponent from "./ResumeComponent";
-
-import "../index.css";
-
-const BodyRouterComponent = ({ navItem }) => {
+import { Route, Routes } from "react-router-dom";
+import AboutPage from "../pages/AboutPage";
+import ContactPage from "../pages/ContactPage";
+import PortfolioPage from "../pages/PortfolioPage";
+import ResumePage from "../pages/ResumePage";
+const BodyRouterComponent = () => {
   return (
     <>
       <div
@@ -18,24 +15,13 @@ const BodyRouterComponent = ({ navItem }) => {
         }}
         className="bodyContainer border border-0 rounded mx-4 "
       >
-        {(() => {
-          switch (navItem) {
-            case "aboutme":
-              return <AboutComponent />;
-
-            case "resume":
-              return <ResumeComponent />;
-
-            case "portfolio":
-              return <PortfolioComponent />;
-
-            case "contact":
-              return <ContactComponent />;
-
-            default:
-              break;
-          }
-        })()}
+        <Routes>
+          <Route path="/" element={<AboutPage />} />
+          <Route path="aboutme" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="portfolio" element={<PortfolioPage />} />
+          <Route path="resume" element={<ResumePage />} />
+        </Routes>
       </div>
     </>
   );

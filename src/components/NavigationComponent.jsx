@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 
 import { Navbar, Container, Nav } from "react-bootstrap";
-const NavigationComponent = ({ handleOnClick }) => {
+import NavItem from "./NavItem";
+const NavigationComponent = () => {
   return (
     <Navbar
       className="rounded-top"
@@ -10,43 +11,11 @@ const NavigationComponent = ({ handleOnClick }) => {
       data-bs-theme="dark"
     >
       <Container className="rounded">
-        <Nav className="d-flex justify-content-around vw-100">
-          <Nav.Link
-            className="zoom"
-            href=""
-            onClick={() => {
-              handleOnClick("aboutme");
-            }}
-          >
-            About
-          </Nav.Link>
-          <Nav.Link
-            className="zoom"
-            href=""
-            onClick={() => {
-              handleOnClick("resume");
-            }}
-          >
-            Resume
-          </Nav.Link>
-          <Nav.Link
-            className="zoom"
-            href=""
-            onClick={() => {
-              handleOnClick("portfolio");
-            }}
-          >
-            Portfolio
-          </Nav.Link>
-          <Nav.Link
-            className="zoom"
-            href=""
-            onClick={() => {
-              handleOnClick("contact");
-            }}
-          >
-            Contact
-          </Nav.Link>
+        <Nav className="d-flex justify-content-around p-2 vw-100">
+          <NavItem path="/aboutme" title="About Me" />
+          <NavItem path="/resume" title="Resume" />
+          <NavItem path="/portfolio" title="Portfolio" />
+          <NavItem path="/contact" title="Contact" />
         </Nav>
       </Container>
     </Navbar>

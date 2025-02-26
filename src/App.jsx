@@ -3,13 +3,8 @@ import { Row, Col, Button } from "react-bootstrap";
 import ProfileComponent from "./components/ProfileComponent";
 import BodyRouterComponent from "./components/BodyRouterComponent";
 import NavigationComponent from "./components/NavigationComponent";
-import { useState } from "react";
 
 function App() {
-  const [navItem, setNavItem] = useState("aboutme");
-  const handleOnClick = (clickedItem) => {
-    setNavItem(clickedItem);
-  };
   return (
     <>
       <Row
@@ -21,10 +16,10 @@ function App() {
         </Col>
 
         <Col lg={8}>
-          <BodyRouterComponent navItem={navItem} />
+          <BodyRouterComponent />
         </Col>
       </Row>
-      <NavigationComponent handleOnClick={handleOnClick} />
+      <NavigationComponent />
 
       <Button
         style={{
