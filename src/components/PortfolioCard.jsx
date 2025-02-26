@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 import { Card, Badge, Stack, Button, NavLink } from "react-bootstrap";
 import { Globe2, Github } from "react-bootstrap-icons";
 import { motion } from "motion/react";
@@ -13,7 +14,7 @@ const PortfolioCard = ({ img, title, liveLink, gitLink, techStack }) => {
       <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
         <Card
           style={{ width: "15rem", backgroundColor: "#4a4a4a", color: "white" }}
-          className="border border-0 "
+          className="zoom border border-0 "
         >
           <Card.Img variant="top" src={img} />
           <Card.Body>

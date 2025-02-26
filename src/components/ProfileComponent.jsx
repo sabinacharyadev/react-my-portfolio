@@ -17,12 +17,14 @@ const ProfileComponent = () => {
 
           <Stack className="d-flex flex-row justify-content-start justify-content-lg-center gap-3">
             <Button
+              className="zoom"
               target="_blank"
               href="https://www.linkedin.com/in/sabinacharya/"
             >
               <Linkedin />
             </Button>
             <Button
+              className="zoom"
               target="_blank"
               variant="dark"
               href="https://github.com/sabinacharyadev"
@@ -30,6 +32,7 @@ const ProfileComponent = () => {
               <Github />
             </Button>
             <Button
+              className="zoom"
               target="_blank"
               variant="warning"
               href="https://stackoverflow.com/users/10009481/sabin-acharya"
