@@ -4,11 +4,16 @@ body {
   font-family: Comfortaa !important;
   font-size: small !important;
 }
-
+/* scroll behavior on body container */
 @media screen and (min-width: 992px) {
   .bodyContainer {
     overflow-y: scroll;
     max-height: 100vh;
     margin-top: 10rem;
   }
+}
+
+/* hover effects */
+.button:hover {
+  opacity: 1 !important;
 }
