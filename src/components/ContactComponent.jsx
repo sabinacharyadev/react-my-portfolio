@@ -35,7 +35,6 @@ const ContactComponent = () => {
           <Form.Group className="mb-4">
             <Form.Label>Full Name</Form.Label>
             <Form.Control
-              size="lg"
               type="text"
               placeholder="Full name"
               name="fullname"
@@ -47,7 +46,6 @@ const ContactComponent = () => {
           <Form.Group className="mb-4" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control
-              size="lg"
               type="email"
               placeholder="Enter email"
               name="email"
