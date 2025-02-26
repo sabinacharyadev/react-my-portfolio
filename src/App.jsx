@@ -36,7 +36,7 @@ function App() {
           marginRight: "2rem",
         }}
         href="#home"
-        className="button fixed-bottom d-flex align-items-center justify-content-center pt-3 fs-2 rounded-circle "
+        className="button fixed-bottom d-flex align-items-center justify-content-center pt-4 fs-2 rounded-circle "
       >
         {" "}
         ^{" "}
