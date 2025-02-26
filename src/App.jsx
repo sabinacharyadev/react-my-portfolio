@@ -6,7 +6,7 @@ import NavigationComponent from "./components/NavigationComponent";
 import { useState } from "react";
 
 function App() {
-  const [navItem, setNavItem] = useState("aboutme");
+  const [navItem, setNavItem] = useState("portfolio");
   const handleOnClick = (clickedItem) => {
     setNavItem(clickedItem);
   };
