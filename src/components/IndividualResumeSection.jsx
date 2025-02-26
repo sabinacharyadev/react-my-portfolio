@@ -7,7 +7,11 @@ const IndividualResumeSection = ({ title, icon, sectionData }) => {
   return (
     <>
       <Stack direction="horizontal" gap={3}>
-        {icon === "book" ? <Book size={25} /> : <Briefcase size={25} />}
+        {icon === "book" ? (
+          <Book color="var(--primary-color)" size={25} />
+        ) : (
+          <Briefcase color="var(--primary-color)" size={25} />
+        )}
         <p style={{ fontSize: "18px" }} className="mt-3">
           {title}
         </p>

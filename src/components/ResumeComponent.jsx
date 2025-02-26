@@ -42,8 +42,8 @@ const ResumeComponent = () => {
         />
 
         <Button
-          variant="outline-light"
-          className="p-3 float-end"
+          variant="outline-warning"
+          className="p-3 mb-3 float-md-end"
           href={Resume}
           download
         >

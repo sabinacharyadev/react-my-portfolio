@@ -34,6 +34,7 @@ function App() {
           margin: "auto",
           marginBottom: "4rem",
           marginRight: "2rem",
+          backgroundColor: "var(--primary-color)",
         }}
         href="#home"
         className="button fixed-bottom d-flex align-items-center justify-content-center pt-4 fs-2 rounded-circle "

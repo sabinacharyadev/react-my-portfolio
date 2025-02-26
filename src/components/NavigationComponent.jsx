@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 
 import { Navbar, Container, Nav } from "react-bootstrap";
-
 const NavigationComponent = ({ handleOnClick }) => {
   return (
     <Navbar
@@ -15,28 +14,36 @@ const NavigationComponent = ({ handleOnClick }) => {
           <Nav.Link
             className="zoom"
             href=""
-            onClick={() => handleOnClick("aboutme")}
+            onClick={() => {
+              handleOnClick("aboutme");
+            }}
           >
             About
           </Nav.Link>
           <Nav.Link
             className="zoom"
             href=""
-            onClick={() => handleOnClick("resume")}
+            onClick={() => {
+              handleOnClick("resume");
+            }}
           >
             Resume
           </Nav.Link>
           <Nav.Link
             className="zoom"
             href=""
-            onClick={() => handleOnClick("portfolio")}
+            onClick={() => {
+              handleOnClick("portfolio");
+            }}
           >
             Portfolio
           </Nav.Link>
           <Nav.Link
             className="zoom"
             href=""
-            onClick={() => handleOnClick("contact")}
+            onClick={() => {
+              handleOnClick("contact");
+            }}
           >
             Contact
           </Nav.Link>

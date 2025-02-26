@@ -30,7 +30,11 @@ const AboutComponent = () => {
             style={{ backgroundColor: "#4a4a4a" }}
             className="border rounded p-4 my-3 mx-1"
           >
-            <CodeSquare className="mb-2" size={50} />
+            <CodeSquare
+              color="var(--primary-color)"
+              className="mb-2"
+              size={50}
+            />
             <h3>Web Development</h3>
             <p>High-quality development of sites at the professional level.</p>
           </Col>
@@ -39,7 +43,7 @@ const AboutComponent = () => {
             style={{ backgroundColor: "#4a4a4a" }}
             className="border rounded p-4 my-3 mx-1"
           >
-            <Server className="mb-2" size={50} />
+            <Server color="var(--primary-color)" className="mb-2" size={50} />
             <h3>Backend Development</h3>
             <p>
               High-performance backend services designed for scalability and
