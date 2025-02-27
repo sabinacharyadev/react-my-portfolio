@@ -56,10 +56,10 @@ const AboutComponent = () => {
           <SkillImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9iWVlYHaZpixvSXKb7Pi4Fsr1_Ci4yI_XXg&s" />
           <SkillImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZAc4BswrDj_q0JcxkRYJ09NDHtv5GEfzOzQ&s" />
           <SkillImage src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
-          <SkillImage src="https://miro.medium.com/v2/resize:fit:866/1*1UBNwRFaslvqt_G3Njw3pg.jpeg" />
+          <SkillImage src="https://images-cdn.openxcell.com/wp-content/uploads/2024/07/25090553/nodejs-inner.webp" />
           <SkillImage src="https://cloudmatetechnologies.com/wp-content/uploads/2024/06/react.js.png" />
           <SkillImage src="https://ih1.redbubble.net/image.438908244.6144/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u2.jpg" />
-          <SkillImage src="https://media.licdn.com/dms/image/v2/D4D12AQETgv5fMiYEXA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1677609185621?e=2147483647&v=beta&t=Ora_YKTAmDz3efeDirq2YQ7INd_unqaFZ13TheQc_60" />
+          <SkillImage src="https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png" />
         </div>
       </Container>
     </motion.div>
