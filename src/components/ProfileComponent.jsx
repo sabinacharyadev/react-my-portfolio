@@ -4,22 +4,29 @@ import { Linkedin, Github, StackOverflow } from "react-bootstrap-icons";
 import { useState } from "react";
 
 const ProfileComponent = () => {
-  const [position, setPosition] = useState([{ x: 0, y: 0 }]);
+  const initialPosition = [{ x: "", y: "" }];
+  const [position, setPosition] = useState(initialPosition);
   const [isInside, setInInside] = useState(false);
 
   const handleMouseMove = (e) => {
+    const { clientX, clientY } = e;
     if (isInside) {
-      const { clientX, clientY } = e;
       setPosition([...position, { x: clientX, y: clientY }]);
       if (position.length > 10) {
         setPosition(position.slice(1));
       }
-    }
+    } else setPosition[{}];
   };
 
   const handleMouseEnter = () => {
     console.log("mouse inside");
     setInInside(true);
+  };
+
+  const handleMouseLeave = () => {
+    console.log("cursor out");
+    setInInside(false);
+    setPosition(initialPosition);
   };
 
   return (
@@ -28,15 +35,14 @@ const ProfileComponent = () => {
         className="d-flex align-items-center justify-content-center flex-lg-column profile"
         onMouseMove={handleMouseMove}
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={() => {
-          setInInside(false);
-          console.log("cursor outside");
-        }}
+        onMouseLeave={handleMouseLeave}
       >
         {position.map((it, index) => (
           <div
             key={index}
-            className={`${isInside ? "glow" : "glow-inactive"}`}
+            className={`${
+              isInside ? "glow" : "glow-inactive"
+            } d-none d-lg-block`}
             style={{
               left: `${it.x}px`,
               top: `${it.y}px`,
