@@ -3,6 +3,7 @@
 import { Card, Badge, Stack, Button, NavLink } from "react-bootstrap";
 import { Globe2, Github } from "react-bootstrap-icons";
 import { motion } from "motion/react";
+import LazyImage from "../assets/default-project.png";
 
 const PortfolioCard = ({ img, title, liveLink, gitLink, techStack }) => {
   return (
@@ -16,7 +17,12 @@ const PortfolioCard = ({ img, title, liveLink, gitLink, techStack }) => {
           style={{ width: "15rem", backgroundColor: "#4a4a4a", color: "white" }}
           className="zoom border border-0 "
         >
-          <Card.Img variant="top" src={img} />
+          <Card.Img
+            variant="top"
+            src={img || LazyImage}
+            alt="portfolio image"
+            style={{ height: "10rem" }}
+          />
           <Card.Body>
             <Stack direction="horizontal" gap={2} className="mb-2">
               {techStack.map((item) => (

@@ -19,12 +19,10 @@ const ProfileComponent = () => {
   };
 
   const handleMouseEnter = () => {
-    console.log("mouse inside");
     setInInside(true);
   };
 
   const handleMouseLeave = () => {
-    console.log("cursor out");
     setInInside(false);
     setPosition(initialPosition);
   };
