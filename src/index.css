@@ -16,6 +16,10 @@ body {
     max-height: 100vh;
     margin-top: 10rem;
   }
+
+  .profile {
+    height: 100vh;
+  }
 }
 
 /* hover effects */
@@ -29,4 +33,18 @@ body {
 .zoom:hover {
   transform: scale(1.1);
   transition: all 0.1s ease-in;
+}
+
+.glow {
+  position: absolute;
+  content: "";
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease-out forwards;
+  opacity: 0.5;
+  background: radial-gradient(var(--primary-color), #3984ff00 80%) !important;
+}
+
+.glow-inactive {
+  opacity: 0;
 }
