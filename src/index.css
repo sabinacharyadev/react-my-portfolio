@@ -29,6 +29,7 @@ body {
 
 .zoom {
   text-decoration: none;
+  z-index: 1;
 }
 .zoom:hover {
   transform: scale(1.1);
