@@ -29,7 +29,6 @@ body {
 
 .zoom {
   text-decoration: none;
-  /* for links in profile image */
   z-index: 1;
 }
 .zoom:hover {
