@@ -7,6 +7,7 @@ import NavigationComponent from "./components/NavigationComponent";
 function App() {
   return (
     <>
+      {/* This is portfolio 1 */}
       <Row
         id="home"
         className="d-flex align-items-center justify-content-center vh-100 flex-lg-nowrap"
