@@ -1,42 +1,34 @@
 import "./index.css";
-import { Row, Col, Button } from "react-bootstrap";
-import ProfileComponent from "./components/ProfileComponent";
-import BodyRouterComponent from "./components/BodyRouterComponent";
-import NavigationComponent from "./components/NavigationComponent";
-
+// Animation package
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Services from "./components/Services";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1800,
+      offset: 100,
+      disable: "mobile",
+    });
+  }, []);
   return (
     <>
-      <Row
-        id="home"
-        className="d-flex align-items-center justify-content-center vh-100 flex-lg-nowrap"
-      >
-        <Col lg={4}>
-          <ProfileComponent />
-        </Col>
-
-        <Col lg={8}>
-          <BodyRouterComponent />
-        </Col>
-      </Row>
-      <NavigationComponent />
-
-      <Button
-        style={{
-          height: "3rem",
-          width: "3rem",
-          opacity: 0.5,
-          margin: "auto",
-          marginBottom: "4rem",
-          marginRight: "2rem",
-          backgroundColor: "var(--primary-color)",
-        }}
-        href="#home"
-        className="button fixed-bottom d-flex align-items-center justify-content-center pt-4 fs-2 rounded-circle "
-      >
-        {" "}
-        ^{" "}
-      </Button>
+      <Navbar />
+      <Hero />
+      <Skills />
+      <Services />
+      <Projects />
+      <Contact />
+      <footer className="p-3 text-center">
+        <h6 className="mb-3">SABIN ACHARYA</h6>
+        <p>binwinstudios © All CopyRights Reserved 2025</p>
+      </footer>
     </>
   );
 }
