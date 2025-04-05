@@ -106,20 +106,27 @@ export const content = {
     project_content: [
       {
         id: 1,
+        img: "https://i.postimg.cc/vBMXpFrx/temp-Image-XHEkjj.avif",
+        title: "Notify",
+        liveLink: "https://clerk-note-client.vercel.app",
+        gitLink: "https://github.com/sabinacharyadev/clerk-note-client",
+      },
+      {
+        id: 2,
         img: "https://i.postimg.cc/PJH96z86/temp-Imagevld0u7.avif",
         title: "Recipe Book",
         liveLink: "https://react-recipe-book-three.vercel.app",
         gitLink: "https://github.com/sabinacharyadev/react-recipe-book",
       },
       {
-        id: 2,
+        id: 3,
         img: "https://i.postimg.cc/26BRVS4D/temp-Imagee2yu7-T.avif",
         title: "Favorite Dogs",
         liveLink: "https://my-fav-dogs.vercel.app",
         gitLink: "https://github.com/sabinacharyadev/my-fav-dogs",
       },
       {
-        id: 3,
+        id: 4,
         img: "https://i.postimg.cc/ZnW8k0v1/temp-Image-Dy-U81-U.avif",
         title: "Homely.",
         liveLink: "https://node-express-basics.onrender.com/login",
